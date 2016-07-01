@@ -72,6 +72,19 @@ Just omit the curly braces from around the function body.
 
 ## No More `arguments`
 
+So one thing you might not have known is that if you're inside a regular function, we get this seret object created for us called `arguments`. Let's see what that looks like:
+
+```javascript
+function lotsOfArguments(arg1, arg2, arg3) {
+  return arguments
+}
+
+lotsOfArguments("Hello", "cat", "function", "helicopter")
+// ["Hello", "cat", "function", "helicopter"]
+```
+
+This might not seem all that useful now, but in JavaScript, you can pass as many arguments as you want into a function. Take another look at the example above, we only defined `lotsOfArguments` to take three arguments, but when I called it, I passed it four! The `arguments` object can be really handy sometimes to find out what just got passed into your function. 
+
 Arrow functions do not, however, receive an `arguments` object.
 
 ``` javascript
@@ -155,3 +168,5 @@ Gross.
 ## Resources
 
 - [MDN: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-arrow-functions'>Arrow Functions</a> on Learn.co and start learning to code for free.</p>

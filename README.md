@@ -70,33 +70,6 @@ square(4) // 16
 
 Just omit the curly braces from around the function body.
 
-## No More `arguments`
-
-So one thing you might not have known is that if you're inside a regular function, we get this seret object created for us called `arguments`. Let's see what that looks like:
-
-```javascript
-function lotsOfArguments(arg1, arg2, arg3) {
-  return arguments
-}
-
-lotsOfArguments("Hello", "cat", "function", "helicopter")
-// ["Hello", "cat", "function", "helicopter"]
-```
-
-This might not seem all that useful now, but in JavaScript, you can pass as many arguments as you want into a function. Take another look at the example above, we only defined `lotsOfArguments` to take three arguments, but when I called it, I passed it four! The `arguments` object can be really handy sometimes to find out what just got passed into your function. 
-
-Arrow functions do not, however, receive an `arguments` object.
-
-``` javascript
-var arrowFunction = () => {
-  console.log(arguments)
-}
-
-arrowFunction() // `Uncaught ReferenceError: arguments is not defined`
-```
-
-This means that we need to define any arguments that an arrow function expects to receive. (But we're probably doing that anyway, right?)
-
 ## Anonymity's the Name of the Game
 
 All arrow functions are anonymous. Regular functions take their names from their identifiers.

@@ -89,6 +89,9 @@ var anonymous = () => {}
 
 anonymous.name // ''
 ```
+```
+var someFunctionName = () => {}
+someFunctionName.name //"someFunctionName" ```
 
 ## Use Cases
 

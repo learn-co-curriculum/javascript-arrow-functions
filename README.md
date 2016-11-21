@@ -22,7 +22,7 @@ var arrowFunction = () => {
 };
 ```
 
-(If you've been checking out the test files in our labs, you've seen them :))
+(If you've been checking out the test files in our labs, you've seen them :))   [WHAT TEST FILES?  I HAVEN'T SEEN ARROW FUNCTIONS]
 
 These are called [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) in reference to the little `=>` that characterizes them.
 
